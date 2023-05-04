@@ -21,7 +21,7 @@ import os
 
 
 # Load the data from the CSV file
-df = pd.read_excel("data.xlsx")
+df = pd.read_csv("sampledata.csv")
 df = df.astype(str)
 df=df.dropna()
 
@@ -206,5 +206,5 @@ for column in df.columns:
         chart.series[0].format.fill.fore_color.rgb = RGBColor(52, 79, 158 )
         chart.font.size = Pt(10)
         
-prs.save("ppt.pptx")
-os.startfile("ppt.pptx")
+prs.save("powerpoint.pptx")
+os.startfile("power.pptx")
