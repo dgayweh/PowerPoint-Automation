@@ -25,13 +25,12 @@ df = pd.read_csv("sampledata.csv")
 df = df.astype(str)
 df=df.dropna()
 
-title_text='Type the Title of Presentation'
+title_text=''
 # set the font and size of the body text
 # set the font and size of the body text
-font_name = "Cambria"
+font_name = ""
 font_size = Pt(14)
-logo_file="logo.png"
-
+logo_file=""
 # create a new presentation
 prs = Presentation()
 
@@ -64,7 +63,7 @@ logo_path = logo_file
 logo = slide.shapes.add_picture(logo_path, Inches(8), Inches(0.5), Inches(1.5), Inches(0.75))
 
 #Next Slide 
-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+content=""
 slide = prs.slides.add_slide(prs.slide_layouts[1])
 
 # add title to the slide
